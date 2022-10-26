@@ -20,6 +20,10 @@ public void addMenuItem(){
        
 }
 public void displayMenu(){
+for(int i=0; i<this.menu.size();i++){
+    BaristaChallengeItem BC=menu.get(i);
+    System.out.println(BC.itemIndex+"  "+BC.name+"  -- $"+BC.price);
+}
 
 }
 
