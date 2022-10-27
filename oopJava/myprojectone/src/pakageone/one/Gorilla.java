@@ -2,7 +2,7 @@ package pakageone.one;
 
 public class Gorilla extends Mammal {
 	public Gorilla() {
-		super();
+		super(100);
 	}
 	
 public void throwSomething() {
@@ -10,4 +10,15 @@ public void throwSomething() {
 	curr-=5;
 	super.setEnergyLevel(curr);
 }
+public void eatBananas() {
+	int curr=super.getEnergyLevel();
+	curr+=10;
+	super.setEnergyLevel(curr);
+}
+public void climb() {
+	int curr=super.getEnergyLevel();
+	curr-=10;
+	super.setEnergyLevel(curr);
+}
+
 }

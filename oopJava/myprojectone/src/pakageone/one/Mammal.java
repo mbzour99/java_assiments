@@ -7,9 +7,11 @@ public class Mammal {
 public int getEnergyLevel() {
 		return energyLevel;
 	}
-
-	public Mammal() {
-	this.energyLevel = 100;
+public Mammal() {
+	this.energyLevel=100;
+}
+	public Mammal(int energe) {
+	this.energyLevel = energe;
 }
 
 	public void setEnergyLevel(int energyLevel) {
@@ -22,12 +24,5 @@ public int displayEnergy() {
 }
 
 
-public static void main(String[] args) {
-Gorilla AboSmaeel=new Gorilla();
-System.out.println("Energe:"+AboSmaeel.displayEnergy());
-AboSmaeel.throwSomething();
-System.out.println("Energe:"+AboSmaeel.displayEnergy());
 
-
-}
 }
