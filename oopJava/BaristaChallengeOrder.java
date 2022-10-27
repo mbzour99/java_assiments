@@ -4,6 +4,7 @@ private String name;
 private double total;
 private boolean ready;
 private ArrayList<BaristaChallengeItem> items;
+public static int x=0;
 public BaristaChallengeOrder(String name,double total, boolean ready, ArrayList<Item> items){
     this.name=name;
     this.total=total;
@@ -14,6 +15,7 @@ public BaristaChallengeOrder(String name,double total, boolean ready, ArrayList<
 }
 public BaristaChallengeOrder(String name){
 this.name=name;
+x+=1;
 }
 public BaristaChallengeOrder(){
     this("default order",0.00,true,null);
